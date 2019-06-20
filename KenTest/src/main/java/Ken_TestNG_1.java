@@ -20,13 +20,6 @@ public class Ken_TestNG_1 {
 	}
 
 	@Test(priority = 3, dependsOnMethods = "doUserReg", alwaysRun = true)
-	public static void thirdTest1() {rrr
-
-		System.out.println("Executing Third test");
-
-	}
-
-	@Test(priority = 3, dependsOnMethods = "doUserReg", alwaysRun = true)
 	public static void thirdTest() {
 
 		System.out.println("Executing Third test");
