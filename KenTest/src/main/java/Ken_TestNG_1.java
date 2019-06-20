@@ -4,6 +4,17 @@ import org.testng.annotations.Test;
 public class Ken_TestNG_1 {
 
 	@Test(priority = 1)
+	
+	
+public static void doUserReg1() {
+		
+		System.out.println("Executing User Reg test");
+		Assert.fail("User not registered sucessfully");
+
+	}
+	
+	
+	
 	public static void doUserReg() {
 		
 		System.out.println("Executing User Reg test");
