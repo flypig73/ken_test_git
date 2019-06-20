@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Fucnctional Test">
+	<test thread-count="5" name="Log in Test">
+		<classes>
+			<class name="TestCase.Ken_TestNG_1" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="5" name="Validate Test">
+		<classes>
+			<class name="TestCase.Ken_TestNG_2" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Dependency Test">
+		<classes>
+			<class name="TestCase.Ken_TestNG_3" />
+		</classes>
+	</test> <!-- Test -->
+
+
+
+
+
+
+
+</suite> <!-- Suite -->
