@@ -34,7 +34,7 @@ public class SwarmAutoChat extends SwarmAutoMain {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Leave"))).click();
 		swipe(207, 280, 207, 104, 1);// restore Ammunition_Ken position for repeat
 
-		// add get sound function in here - working now, to make some condition to repeat.
+		// add get sound function in here - now it is not working now, to make some condition to repeat.will use later if it need
 		//PlayAlamSound GetSounds = new PlayAlamSound();
 		/*
 		 * GetSounds.AlamSound(); while (true) { try { GetSounds.AlamSound();
