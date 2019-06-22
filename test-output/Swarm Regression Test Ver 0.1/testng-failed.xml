@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Swarm Regression Test Ver 0.1]" parallel="tests">
+  <listeners>
+    <listener class-name="swarmListeners.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="SwarmRegression-SwarmAutoChat(failed)" parallel="tests">
+    <classes>
+      <class name="com.swarm.automation.swarm.test.SwarmAutoChat">
+        <methods>
+          <include name="ChatSendingAsimpleMessage"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.swarm.automation.swarm.test.SwarmAutoChat -->
+    </classes>
+  </test> <!-- SwarmRegression-SwarmAutoChat(failed) -->
+  <test thread-count="5" name="SwarmRegression-SwarmAutoCamera(failed)" parallel="tests">
+    <classes>
+      <class name="com.swarm.automation.swarm.test.SwarmAutoCamera">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="CameraRecordingAvideo"/>
+        </methods>
+      </class> <!-- com.swarm.automation.swarm.test.SwarmAutoCamera -->
+    </classes>
+  </test> <!-- SwarmRegression-SwarmAutoCamera(failed) -->
+</suite> <!-- Failed suite [Swarm Regression Test Ver 0.1] -->
