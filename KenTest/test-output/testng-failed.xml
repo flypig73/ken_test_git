@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Fucnctional Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testListeners.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Log in Test(failed)">
+    <classes>
+      <class name="TestCase.Ken_TestNG_1">
+        <methods>
+          <include name="fourthTest"/>
+          <include name="doUserReg"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- TestCase.Ken_TestNG_1 -->
+    </classes>
+  </test> <!-- Log in Test(failed) -->
+  <test thread-count="5" name="Validate Test(failed)">
+    <classes>
+      <class name="TestCase.Ken_TestNG_2">
+        <methods>
+          <include name="K1_TEST"/>
+          <include name="K2_TEST"/>
+        </methods>
+      </class> <!-- TestCase.Ken_TestNG_2 -->
+    </classes>
+  </test> <!-- Validate Test(failed) -->
+  <test thread-count="5" name="Dependency Test(failed)">
+    <classes>
+      <class name="TestCase.Ken_TestNG_3">
+        <methods>
+          <include name="K4_TEST"/>
+          <include name="K3_TEST"/>
+        </methods>
+      </class> <!-- TestCase.Ken_TestNG_3 -->
+    </classes>
+  </test> <!-- Dependency Test(failed) -->
+</suite> <!-- Failed suite [Fucnctional Test] -->
